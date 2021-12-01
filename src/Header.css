@@ -1,0 +1,8 @@
+@media only screen and (max-width: 768px) {
+    .languageSwitcher {
+        display: none;
+    }
+    .languageSwitcherMobile {
+        display: block !important;
+    }
+}

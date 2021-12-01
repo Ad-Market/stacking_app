@@ -1,0 +1,422 @@
+html,
+body {
+    background: #f8f8f8;
+    font-family: SFProDisplay;
+    overflow-x: hidden;
+    font-size: 10px;
+}
+
+.table td,
+.table th {
+    border-top: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*  */
+@font-face {
+    font-family: SFProDisplay;
+
+    src: url('./fonts/SFPRODISPLAYREGULAR.OTF');
+
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SFProDisplay;
+
+    src: url('./fonts/SFPRODISPLAYMEDIUM.OTF');
+
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: SFProDisplay;
+
+    src: url('./fonts/SFPRODISPLAYBOLD.OTF');
+
+    font-weight: 700;
+}
+
+.main-regular {
+    font-family: SFProDisplay;
+    font-weight: 400;
+}
+
+.main-medium {
+    font-family: SFProDisplay;
+    font-weight: 500;
+}
+
+.main-semibold {
+    font-family: SFProDisplay;
+    font-weight: 600;
+}
+
+.main-bold {
+    font-family: SFProDisplay;
+    font-weight: 700;
+}
+
+/*  */
+.font-48 {
+    font-size: 4.8rem;
+}
+
+.font-36 {
+    font-size: 3.6rem;
+}
+
+.font-24 {
+    font-size: 2.4rem;
+}
+
+.font-78 {
+    font-size: 7.8rem;
+}
+
+.font-18 {
+    font-size: 1.8rem;
+}
+
+.font-12 {
+    font-size: 1.2rem;
+}
+
+.font-16 {
+    font-size: 1.6rem;
+}
+
+.font-20 {
+    font-size: 2rem;
+}
+
+/*  */
+.color-white {
+    color: #FFFFFF;
+}
+
+.color-gray {
+    color: #A9ADBD;
+}
+
+.color-black {
+    color: #1B1B1B;
+}
+
+.color-green {
+    color: #0ECB81;
+}
+
+.color-blue {
+    color: #216AF5;
+}
+
+/*  */
+.bg-blue {
+    background: #216AF5;
+}
+
+.bg-trans {
+    background: transparent;
+}
+
+/*  */
+.main-container {
+    max-width: 1440px;
+    margin: auto;
+    width: 100%;
+}
+
+.main-card {
+    border-radius: 25px;
+    box-shadow: #efefef 0px 10px 10px 0px;
+}
+
+.main-big_button {
+    border-radius: 15px;
+    width: 180px;
+    height: 70px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.main-big_form {
+    height: 70px;
+    padding: 0 35px;
+}
+
+.main-big_button:hover,
+.main-small_button:hover {
+    opacity: 0.8;
+}
+
+.main-big_button:focus,
+.main-small_button:focus {
+    outline: none;
+}
+
+.main-small_button {
+    border-radius: 15px;
+    width: 156px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.main-border_white {
+    border: 2px white solid;
+}
+
+.main-border_green {
+    border: 2px #216AF5 solid;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/*  */
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+.px-50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.rounded-form {
+    border-radius: 15px;
+}
+
+.border-form {
+    border: 1px solid #E1E4EB;
+}
+
+.big-circle {
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 60px solid rgba(255, 255, 255, 0.062);
+    position: absolute;
+    top: -100px;
+    right: -100px;
+}
+
+.small-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid rgba(255, 255, 255, 0.062);
+    position: absolute;
+    bottom: -20px;
+    left: -70px;
+}
+
+.modal-content {
+    border-radius: 25px;
+}
+
+.copy-icon {
+    margin-top: -15px;
+    margin-left: 10px;
+}
+
+#qrcode-body {
+    position: absolute;
+    background: white;
+    left: 0;
+    top: 380px;
+    width: 450px;
+    max-width: 450px;
+    border-radius: 25px;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+#qrcode-body .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+}
+
+#qrcode-body.show-qrcode {
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+.main-body {
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+/*  */
+@media (max-width: 1024px) {
+    #qrcode-body {
+        top: 330px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    html, body {
+        font-size: 8px;
+    }
+
+    .main-small_button {
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .main-big_button {
+        border-radius: 10px;
+        width: 150px;
+        height: 60px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .main-big_form {
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    #qrcode-body {
+        top: 300px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    html, body {
+        font-size: 6px;
+    }
+
+    .main-small_button {
+        border-radius: 8px;
+        width: 100px;
+        height: 30px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .main-big_button {
+        border-radius: 8px;
+        width: 130px;
+        height: 40px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .main-big_form {
+        height: 40px;
+        padding: 0 20px;
+        border-radius: 8px;
+    }
+
+    .big-circle {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 50px solid rgba(255, 255, 255, 0.062);
+        position: absolute;
+        top: -100px;
+        right: -100px;
+    }
+
+    .small-circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 20px solid rgba(255, 255, 255, 0.062);
+        position: absolute;
+        bottom: -20px;
+        left: -70px;
+    }
+
+    .main-coin_img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main-body {
+        padding: 30px 10px !important;
+    }
+
+    .data-row_img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .token-sale_img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main-statistic_chart img {
+        height: 200px;
+    }
+
+    .main-balance_bottom {
+        flex-direction: column;
+    }
+
+    .main-balance_text {
+        width: 100% !important;
+    }
+
+    #qrcode-body {
+        top: 260px;
+        width: 360px;
+    }
+}
