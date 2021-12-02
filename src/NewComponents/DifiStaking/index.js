@@ -3,7 +3,7 @@ import bnbIcon from "../Home/images/icons/bnb.png";
 import ethIcon from "../Home/images/icons/eth.png";
 import DataRow from "./DataRow";
 
-export default function DifiShaking({ setStakeCoin,setStakeModalshow }) {
+export default function DifiShaking({ setStakeCoin, setStakeModalshow }) {
   return (
     <div className="main-difi_staking my-5">
       <div className="font-36 main-bold color-black my-4">DeFi-Staking</div>
