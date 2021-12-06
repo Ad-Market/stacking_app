@@ -40,7 +40,13 @@ export default function TokenSale({
               Token Symbol
             </div>
             <div className="token-symbol_symbols d-flex align-items-center">
-              <img src={twoIcon} alt="main-coin" className="token-sale_img" width="45px" height="45px" />
+              <img
+                src={twoIcon}
+                alt="main-coin"
+                className="token-sale_img"
+                width="45px"
+                height="45px"
+              />
               <div className="color-gray font-18 main-regular ml-3">$SLM</div>
             </div>
           </div>

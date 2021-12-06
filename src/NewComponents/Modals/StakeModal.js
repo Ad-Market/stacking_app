@@ -20,7 +20,13 @@ export default function StackModal({
   };
 
   return (
-    <Modal show={stakeModalshow} className="stakeModal" centered scrollable={true} onHide={() => handleClose()}>
+    <Modal
+      show={stakeModalshow}
+      className="stakeModal"
+      centered
+      scrollable={true}
+      onHide={() => handleClose()}
+    >
       <Modal.Header className="p-0" closeButton={confirmed}>
         <Modal.Title className="main-bold font-36 color-black">
           DeFi-Staking
